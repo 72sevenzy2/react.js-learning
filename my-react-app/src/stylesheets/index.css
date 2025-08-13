@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html body {
+  background: hsl(0, 0%, 29%);
+}
+
+.icon-wrapper {
+  width: 8vw;
+  height: 16vh;
+  background: hsl(0, 0%, 100%);
+  border-radius: 30px;
+  position: relative;
+  left: 5vw;
+  top: 10vh;
+  transition: background 0.5s ease-in-out;
+}
+.icon-wrapper:hover {
+  cursor: default !important;
+  background: hsl(0, 0%, 17%);
+}
+
+/*# sourceMappingURL=index.css.map */
+
+.mc2 {
+  display: flex;
+}
