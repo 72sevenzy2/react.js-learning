@@ -18,6 +18,7 @@ html body {
   top: 10vh;
   transition: background 0.5s ease-in-out;
 }
+
 .icon-wrapper:hover {
   cursor: default !important;
   background: hsl(0, 0%, 17%);
@@ -27,4 +28,8 @@ html body {
 
 .mc2 {
   display: flex;
+}
+
+.green-dynam {
+  background-color: green;
 }
