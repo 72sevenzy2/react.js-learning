@@ -1,1 +1,1 @@
-This is initially my REACT learning phase, at this time I will be constantly commiting to this repo, and learn more and more.
+This repo has been concluded since i only used it for learning react.js which i finished doing so
