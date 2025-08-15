@@ -5,7 +5,8 @@
 }
 
 html body {
-  background: hsl(0, 0%, 29%);
+  background: hsl(0, 0%, 71%);
+  overflow: visible;
 }
 
 .icon-wrapper {
@@ -30,6 +31,7 @@ html body {
   display: flex;
 }
 
-.green-dynam {
-  background-color: green;
+.divcont {
+  position: relative;
+  left: 20vw;
 }

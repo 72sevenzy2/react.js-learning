@@ -1,22 +1,31 @@
-import { useReducer } from "react";
+import { useState, useReducer } from "react";
 
-const initstate = { todos: [] };
+const initialstate = { todos: [], count: 0 };
+
 function reducerfunc(state, action) {
   switch (action.type) {
     default:
-      return state;
+      return ""
   }
 }
 
-function TodoList() {
-  const [state, dispatch] = useReducer(reducerfunc, initstate);
+function TodoApp() {
+  const [state, dispatch] = useReducer(reducerfunc, initialstate)
+  const [int, setint] = useState("");
 
   return (
     <div>
-      <h1>Todo List</h1>
-      <input type="text" />
+      <input type="text" placeholder="add a task" aria-label="add a task"
+        value={int} onChange={(e) => { setint(e.target.value) }} />
+      <button onClick={() => { if (int.trim()) { dispatch({ type: add, payload: int }); setint(""); } }}>add task</button>
+      <p>{state.count} = todos</p>
+      <ul>
+        {state.todos.map((todo, index) => (
+          <ul key={index}>{todo}</ul>
+        ))}
+      </ul>
     </div>
-  );
+  )
 }
 
-export default TodoList;
+export default TodoApp;

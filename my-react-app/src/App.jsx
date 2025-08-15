@@ -1,12 +1,12 @@
 import React from 'react';
 import './stylesheets/App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import TodoList from './todolist';
+import TodoApp from './todolist.jsx';
 
 function App() {
   return (
     <>
-      <TodoList />
+      <TodoApp />
     </>
   )
 }
