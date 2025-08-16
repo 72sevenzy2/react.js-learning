@@ -1,8 +1,3 @@
 function configsubmit(e, btnid) {
-    if (e.key === "Enter") {
-        e.preventDefault();
-        document.getElementById(btnid)?.click();
-    }
+   e.key === "Enter" ? e.preventDefault(); document.getElementById(btnid)?.click(); : null;
 }
-
-export default configsubmit;
